@@ -28,7 +28,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background: rgba(255, 255, 255, 0.5);
+  z-index: 9;
 }
 
 .header {
@@ -84,9 +84,51 @@ header {
 /******
   Home
 *******/
-#home {
-  background: black;
-  min-height: 100vh;
+.img-slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.img-slider .slide.active-slide {
+  opacity: 1;
+}
+
+.img-slider .slide img {
+  width: 100%;
+}
+
+.img-slider .slider-navigation {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .slider-navigation .slider-btn {
+  background: #fff;
+  width: 8px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.img-slider .slider-navigation .slider-btn.active-slider-btn {
+  height: 30px;
+  background: var(--yellow);
 }
 
 /***************
