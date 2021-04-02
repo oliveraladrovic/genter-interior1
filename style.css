@@ -31,6 +31,10 @@ header {
   z-index: 9;
 }
 
+.logo {
+  padding: 1rem 0;
+}
+
 .header {
   display: flex;
   position: relative;
@@ -52,7 +56,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .navbar a:hover {
@@ -70,7 +74,7 @@ header {
   justify-content: space-between;
   width: 18px;
   height: 18px;
-  top: 0.35rem;
+  top: 1.35rem;
   right: 15px;
 }
 
@@ -105,8 +109,14 @@ header {
   opacity: 1;
 }
 
-.img-slider .slide img {
-  width: 100%;
+.img-slider .slide:first-child {
+  background: url('./images/hero1.jpg') no-repeat center center/cover;
+}
+.img-slider .slide:nth-child(2) {
+  background: url('./images/hero2.jpg') no-repeat center center/cover;
+}
+.img-slider .slide:nth-child(3) {
+  background: url('./images/hero3.jpg') no-repeat center center/cover;
 }
 
 .img-slider .slider-navigation {
@@ -126,6 +136,10 @@ header {
   cursor: pointer;
 }
 
+.img-slider .slider-navigation .slider-btn:hover {
+  background: var(--yellow);
+}
+
 .img-slider .slider-navigation .slider-btn.active-slider-btn {
   height: 30px;
   background: var(--yellow);
@@ -135,6 +149,7 @@ header {
   Media Queries
 ****************/
 @media (max-width: 630px) {
+  /* Header */
   .header {
     flex-direction: column;
     align-items: flex-start;
