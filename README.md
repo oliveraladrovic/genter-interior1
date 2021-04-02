@@ -1,3 +1,3 @@
 # Genter - Interior Design Agency
 
-Converting PSD in HTML in learning purposes.
+Converting PSD to HTML in learning purposes.
