@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@300&display=swap');
 
 :root {
   --yellow: #feec42;
@@ -19,6 +19,42 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: auto;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 1.9375rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 4.25rem;
+  line-height: 3.75rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.separator {
+  width: 38px;
+  height: 10px;
+  background: var(--yellow);
+  margin: 2.3125rem 0 2.875rem 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6875rem;
+  color: #ccc;
 }
 
 /********
@@ -105,6 +141,25 @@ header {
   transition: opacity 1s ease-in-out;
 }
 
+.img-slider .slide-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img-slider .info {
+  width: 470px;
+  max-width: 100%;
+  background: url('./images/background1.png') no-repeat top right/cover;
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+.img-slider .info .more {
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .img-slider .slide.active-slide {
   opacity: 1;
 }
@@ -148,7 +203,9 @@ header {
 /***************
   Media Queries
 ****************/
-@media (max-width: 630px) {
+/* @media (max-width: 1199.98px) {} */
+/* @media (max-width: 991.98px) {} */
+@media (max-width: 767.98px) {
   /* Header */
   .header {
     flex-direction: column;
@@ -179,5 +236,36 @@ header {
 
   .navbar.show-nav {
     display: flex;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .img-slider .info {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .img-slider .info .more {
+    padding-top: 1rem;
+  }
+
+  h1 {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .separator {
+    width: 38px;
+    height: 10px;
+    background: var(--yellow);
+    margin: 0.75rem 0 1rem 0;
+  }
+
+  p {
+    line-height: 1.5rem;
   }
 }
