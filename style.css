@@ -99,6 +99,10 @@ header {
   z-index: 9;
 }
 
+.dark-back {
+  background: #000;
+}
+
 .logo {
   padding: 1rem 0;
 }
