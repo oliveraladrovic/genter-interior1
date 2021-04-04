@@ -101,7 +101,7 @@ header {
 }
 
 .dark-back {
-  background: #000;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .logo {
@@ -130,7 +130,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 1rem;
-  transition: 0.2s;
+  transition: color 0.2s ease-in-out;
 }
 
 .navbar a:hover {
@@ -176,6 +176,7 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0;
+  z-index: 0;
   transition: opacity 1s ease-in-out;
 }
 
@@ -192,14 +193,25 @@ header {
   padding: 6rem 3rem 3rem 3rem;
 }
 
-.img-slider .info .more {
-  padding-top: 2.5rem;
+.hero-link {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
+.hero-link a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+
+.hero-link a:hover {
+  color: var(--yellow);
+}
+
 .img-slider .slide.active-slide {
   opacity: 1;
+  z-index: 1;
 }
 
 .img-slider .slide:first-child {
