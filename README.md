@@ -6,4 +6,3 @@ Todo:
 
 - Team
 - Blog
-- repair social icons

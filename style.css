@@ -593,16 +593,16 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 160px;
+  height: 100%;
 }
 
-.social .icon .fab {
-  font-size: 2rem;
-  color: #333;
+.social a {
+  font-size: 1.5rem;
+  color: #fff;
   transition: color 0.2s ease-in-out;
-  background: #fff;
 }
 
-.social .icon .fab:hover {
+.social a:hover {
   color: var(--yellow);
 }
 
