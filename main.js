@@ -77,3 +77,27 @@ setInterval(() => {
   }
   showSlide(currentSlide);
 }, 10000);
+
+// Gallery filtering
+const filterButtons = document.querySelectorAll('.galery-btn');
+const galeryImages = document.querySelectorAll('.galery-card');
+function filterSelection(filter) {
+  // Change active button
+  filterButtons.forEach((btn) => {
+    if (btn.classList.contains('active')) {
+      btn.classList.remove('active');
+    }
+    if (btn.classList.contains(filter)) {
+      btn.classList.add('active');
+    }
+  });
+  // Filter images
+  galeryImages.forEach((card) => {
+    if (card.classList.contains('hidden')) {
+      card.classList.remove('hidden');
+    }
+    if (!card.classList.contains(filter) && filter != 'all') {
+      card.classList.add('hidden');
+    }
+  });
+}

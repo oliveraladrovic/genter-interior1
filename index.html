@@ -34,8 +34,8 @@
             <li><a href="#home" class="active-link">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <!-- <li><a href="#galery">Galery</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="#galery">Galery</a></li>
+            <!-- <li><a href="#team">Team</a></li>
             <li><a href="#blog">Blog</a></li> -->
           </ul>
         </nav>
@@ -193,6 +193,190 @@
       </div>
     </section>
 
+    <!-- Galery -->
+    <section id="galery">
+      <div class="galery-number">03</div>
+      <h3>Featured Projects</h3>
+      <div class="separator"></div>
+      <div class="galery-filters">
+        <button class="galery-btn all active" onclick="filterSelection('all')">
+          All
+        </button>
+        <button
+          class="galery-btn apartments"
+          onclick="filterSelection('apartments')"
+        >
+          Apartments
+        </button>
+        <button class="galery-btn hotels" onclick="filterSelection('hotels')">
+          Hotels
+        </button>
+        <button class="galery-btn bars" onclick="filterSelection('bars')">
+          Bars
+        </button>
+        <button
+          class="galery-btn restaurants"
+          onclick="filterSelection('restaurants')"
+        >
+          Restaurants
+        </button>
+        <button class="galery-btn stores" onclick="filterSelection('stores')">
+          Stores
+        </button>
+        <button class="galery-btn offices" onclick="filterSelection('offices')">
+          Offices
+        </button>
+      </div>
+      <div class="galery-cards">
+        <div class="galery-card restaurants">
+          <img src="./galery/restaurant1-thumb.jpg" alt="Restaurant design" />
+          <div class="hovered">
+            <h4>Local diner</h4>
+            <p>Restaurant</p>
+            <div class="galery-link">
+              <a href="./galery/restaurant1.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card apartments">
+          <img src="./galery/apartment2-thumb.jpg" alt="Apartment design" />
+          <div class="hovered">
+            <h4>Luxury kitchen</h4>
+            <p>Apartment</p>
+            <div class="galery-link">
+              <a href="./galery/apartment2.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card hotels">
+          <img src="./galery/hotel2-thumb.jpg" alt="Hotel lobby design" />
+          <div class="hovered">
+            <h4>Sky lobby</h4>
+            <p>Hotel</p>
+            <div class="galery-link">
+              <a href="./galery/hotel2.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card hotels">
+          <img src="./galery/hotel1-thumb.jpg" alt="Hotel lobby design" />
+          <div class="hovered">
+            <h4>Check-in lobby</h4>
+            <p>Hotel</p>
+            <div class="galery-link">
+              <a href="./galery/hotel1.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card offices">
+          <img
+            src="./galery/office1-thumb.jpg"
+            alt="Office design - conference room"
+          />
+          <div class="hovered">
+            <h4>Conference room</h4>
+            <p>Office</p>
+            <div class="galery-link">
+              <a href="./galery/office1.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card bars">
+          <img src="./galery/bar2-thumb.jpg" alt="Bar design" />
+          <div class="hovered">
+            <h4>Bar menu board</h4>
+            <p>Bar</p>
+            <div class="galery-link">
+              <a href="./galery/bar2.jpg"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card apartments">
+          <img src="./galery/apartment1-thumb.jpg" alt="Apartment design" />
+          <div class="hovered">
+            <h4>Dining with view</h4>
+            <p>Apartment</p>
+            <div class="galery-link">
+              <a href="./galery/apartment1.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card restaurants">
+          <img src="./galery/restaurant2-thumb.jpg" alt="Restaurant design" />
+          <div class="hovered">
+            <h4>Sports club restaurant</h4>
+            <p>Restaurant</p>
+            <div class="galery-link">
+              <a href="./galery/restaurant2.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card offices">
+          <img
+            src="./galery/office2-thumb.jpg"
+            alt="Office design - conference room"
+          />
+          <div class="hovered">
+            <h4>High end conference room</h4>
+            <p>Office</p>
+            <div class="galery-link">
+              <a href="./galery/office2.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card bars">
+          <img src="./galery/bar1-thumb.jpg" alt="Bar design" />
+          <div class="hovered">
+            <h4>Beer house</h4>
+            <p>Bar</p>
+            <div class="galery-link">
+              <a href="./galery/bar1.jpg"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card stores">
+          <img src="./galery/store1-thumb.jpg" alt="Store design" />
+          <div class="hovered">
+            <h4>Vintage shop</h4>
+            <p>Store</p>
+            <div class="galery-link">
+              <a href="./galery/store1.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="galery-card stores">
+          <img src="./galery/store2-thumb.jpg" alt="Store design" />
+          <div class="hovered">
+            <h4>Supermarket fruit stands</h4>
+            <p>Store</p>
+            <div class="galery-link">
+              <a href="./galery/store2.jpg"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <div class="wrapper contact">
@@ -213,7 +397,7 @@
             <a href="tel:00166889999">
               <i class="fas fa-phone"></i> 001-6688-9999</a
             ><br />
-            <a href="mail:contact@site.com"
+            <a href="mailto:contact@site.com"
               ><i class="fas fa-envelope"></i> contact@site.com</a
             >
           </p>
