@@ -639,6 +639,9 @@ footer {
   .galery-btn {
     padding: 1rem;
   }
+  .galery-card {
+    margin: 0.1rem 0;
+  }
 }
 /* 576px - 768px */
 @media (max-width: 767.98px) {
