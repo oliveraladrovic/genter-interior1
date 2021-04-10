@@ -439,6 +439,7 @@ header {
   outline: none;
   padding: 1rem 2rem;
   transition: color 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .galery-btn.active {
@@ -796,9 +797,9 @@ footer {
     padding: 5rem;
   }
 
-  .galery-btn {
+  /* .galery-btn {
     padding: 1rem 0.5rem;
-  }
+  } */
 
   .galery-card {
     width: 100%;
